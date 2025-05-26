@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Answer this awesome survey !</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input required type="text" id="name" placeholder="ex:john Doe"/>
+      <label for="email" id="email-label">Email</label>
+      <input required type="email" id="email" placeholder="ex:test@email.com"/>
+      <label for="number" id="number-label">Number</label>
+      <input type="number" id="number" min="0" max="100" placeholder="ex:33"/>
+      <label for="dropdown">Dropdown</label>
+      <select type="dropdown" id="dropdown">
+        <option selected value="whou">Whou</option>
+        <option value="mouarf">Mouarf</option>
+      <label for="yes-radio">Yes</label>
+      <input type="radio" id="yes-radio" value="yes" name="radio">
+      <label for="no-radio">No</label>
+      <input type="radio" id="no-radio" value ="no" name="radio">
+      <label for="ads">Social Media Ads</label>
+      <input type="checkbox" id="ads" name="ads" value="ads"/>
+      <label for="recommendation">Personal Recommendation</label>
+      <input type="checkbox" id="recommendation" name="recommendation" value="recommendation"/>
+      <label for="location">Location</label>
+      <input type="checkbox" id="location" name="location" value="location"/>
+      <label for="reputation">Reputation</label>
+      <input checked type="checkbox" id="reputation" name="reputation" value="reputation"/>
+      <label for="price">Price</label>
+      <input type="checkbox" id="price" name="price" value="price"/>
+      <label for="comments">Other Comments?</label>
+      <textarea id="comments" name="comments"cols="30" rows="10"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
